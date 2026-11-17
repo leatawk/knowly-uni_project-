@@ -1,0 +1,25 @@
+{
+  "name": "knowly-server",
+  "version": "1.0.0",
+  "description": "Knowly backend - product discovery and price comparison API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node --test tests/normalizetest.js tests/offerstest.js tests/authtest.js tests/comparetest.js tests/brandtest.js tests/apitest.js",
+    "test:unit": "node --test tests/normalizetest.js tests/offerstest.js tests/authtest.js tests/comparetest.js tests/brandtest.js",
+    "test:api": "node --test tests/apitest.js",
+    "check": "node scripts/check.js",
+    "db:setup": "node scripts/setup-db.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

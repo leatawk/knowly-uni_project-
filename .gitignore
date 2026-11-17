@@ -1,0 +1,13 @@
+node_modules/ 
+.env
+.env.*
+!.env.example
+dist/
+build/
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+/knowly-uni_project-/
